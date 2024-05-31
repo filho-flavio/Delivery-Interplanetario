@@ -54,6 +54,9 @@ const Register = () => {
                     </>
                 )}
             </div>
+            <div className="container-rocket">
+                <img src="/public/foguete.gif" alt="Foguete flutuando" />
+            </div>
         </div>
     );
 };
