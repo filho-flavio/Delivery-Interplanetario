@@ -1,6 +1,5 @@
 // Funções para lidar com as requisições do frontend
 
-
 // Função que retorna todos os endereços salvos no Local Storage
 export const getTodosEnderecos = () => {
   const enderecos = JSON.parse(localStorage.getItem("db_addresses")) || [];
@@ -61,7 +60,7 @@ export const deleteAddress = (id) => {
   const existingAddresses =
     JSON.parse(localStorage.getItem("db_addresses")) || [];
 
-    // Verificando se endereço existe
+  // Verificando se endereço existe
   const updatedAddresses = existingAddresses.filter(
     (address) => address.id !== id
   );

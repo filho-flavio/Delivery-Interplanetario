@@ -1,10 +1,8 @@
 // Icone para endereços
-
 import { Link } from "react-router-dom";
 import "../Styles/GlobalStyles.css"
 import { deleteAddress } from "../services/api";
 
-// eslint-disable-next-line react/prop-types
 const IconeEndereco = ({ item, setGetAddress }) => {
     const handleDeleteAddres = (id) => {
         deleteAddress(id);
@@ -43,5 +41,4 @@ const IconeEndereco = ({ item, setGetAddress }) => {
         </>
     )
 }
-
 export default IconeEndereco;

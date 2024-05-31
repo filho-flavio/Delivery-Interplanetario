@@ -1,3 +1,8 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 .container-register {
     width: 100vw;
     height: 100vh;
@@ -9,11 +14,9 @@
     justify-content: center;
     align-items: center;
 }
-
 .container-form {
     width: 40rem;
     height: 80%;
-    /* box-shadow: rgba(71, 71, 71, 0.24) 0px 3px 8px; */
     border-radius: 3vw;
     display: flex;
     flex-direction: column;
@@ -21,13 +24,11 @@
     gap: 1vw;
     padding: 1vw;
 }
-
 .container-form h1 {
     width: 90%;
-    font-size: 2.4vw;
+    font-size: 2.8vw;
     color: #F2F2F2;
 }
-
 .btn-add-endereco {
     width: 90%;
     min-height: 4.5vh;
@@ -42,12 +43,9 @@
     font-weight: 600;
     font-size: 1vw;
 }
-
 .titulo-wrap-enderecos {
     font-size: 1.7vw;
 }
-
-
 .container-rocket {
     width: 20rem;
     height: 70%;
@@ -55,12 +53,9 @@
     justify-content: center;
     align-items: center;
 }
-
 .container-rocket img {
     width: 100%;
-    /* rotate: -40deg; */
 }
-
 .content-enderecos {
     width: 90%;
     height: 90%;
@@ -69,27 +64,23 @@
     flex-direction: column;
     gap: 1vw;
 }
-
 .escolher-terra-marte {
     display: flex;
     flex-direction: column;
     gap: 0.2vw;
     width: 6.1vw;
 }
-
 .escolher-terra-marte span {
     font-size: 1vw;
     display: flex;
     gap: 1vw;
 }
-
 .underline {
     width: 2.8vw;
     height: 0.3vh;
     background-color: #3B82F6;
     align-self: flex-start;
 }
-
 .lista-enderecos {
     width: 100%;
     min-height: 65%;
@@ -99,11 +90,9 @@
     flex-direction: column;
     gap: 0.8vw;
 }
-
 .line {
     outline: 1px solid #fff;
 }
-
 .icone-endereco {
     list-style-type: none;
     width: 100%;
@@ -117,78 +106,60 @@
     align-items: center;
     justify-content: space-around;
 }
-
 .icone-endereco p {
     font-size: 1vw;
 }
-
 .icone-endereco[data-planet="Marte"] {
     border: 1px solid #D04B23;
 }
-
 .address-label {
     background-color: #2e2e2e;
     padding: 0.3vw;
     border-radius: 0.5vw;
 }
-
 .icon-planet {
     width: 2.5vw;
 }
-
 .icon-edit-address {
     width: 2vw;
     cursor: pointer;
     fill: #F2F2F2;
 }
-
 .icon-edit-address:hover {
     scale: 1.05;
     transition: .4s ease;
 }
-
 .btn-delete-address {
     background-color: transparent;
     border: none;
     outline: none;
 }
-
 .icon-delete-address {
     width: 2vw;
     cursor: pointer;
     fill: #c04343;
 }
-
 .icon-delete-address:hover {
     fill: #c15050;
     scale: 1.05;
     transition: .4s ease;
 }
-
 .lista-enderecos::-webkit-scrollbar {
-    /* largura da barra de rolagem */
     width: 0.5rem;
 }
-
 .lista-enderecos::-webkit-scrollbar-track {
-    /* cor de fundo da trilha */
     background: #f1f1f1;
     border-radius: 1rem;
 }
-
 .lista-enderecos::-webkit-scrollbar-thumb {
-    /* cor do indicador da barra de rolagem */
     background: #747474;
-    /* borda arredondada */
     border-radius: 6.25rem;
 }
-
 .container-modal {
     width: 95%;
     background-color: #1B1F23;
     justify-self: flex-end;
 }
-
 .wrap-btns-form {
     display: flex;
     justify-content: flex-end;
@@ -196,7 +167,6 @@
     width: 94%;
     margin: auto;
 }
-
 .wrap-btns-form button {
     width: 6vw;
     height: 2.2vw;
@@ -209,30 +179,24 @@
     font-weight: 600;
     transition: .5s ease;
 }
-
 .btn-cancelar-new-address {
     background-color: #D04B23;
 }
-
 .btn-cancelar-new-address:hover {
     background-color: #E06A4A;
 }
-
 .btn-salvar-new-address {
     background-color: #3B82F6;
 }
-
 .btn-salvar-new-address:hover {
     background-color: #6195e8;
 }
-
 .label-planet {
     display: flex;
     flex-direction: column;
     gap: 0.5vw;
     padding: 1vw;
 }
-
 select {
     font-size: 0.9vw;
     border: none;
@@ -243,13 +207,11 @@ select {
     color: #F2F2F2;
     background-color: transparent;
 }
-
 option {
     color: #1B1F23;
     border-radius: 0.5vw;
     font-size: 0.9vw;
 }
-
 .in-new-addres {
     font-size: 0.8vw;
     border: none;
@@ -261,8 +223,6 @@ option {
     background-color: transparent;
     padding: 0.2vw;
 }
-
-
 .form-message-error {
     height: 1.2vw;
     font-weight: 600;
@@ -272,31 +232,25 @@ option {
     font-size: 0.9vw;
     color: #D04B23;
 }
-
 .flex {
     display: flex;
 }
-
 .flex label {
     flex: 1;
 }
-
 .endereco-terra {
     display: flex;
     flex-wrap: wrap;
 }
-
 .endereco-terra label {
     flex: 1;
 }
-
 .container-edit {
     background-color: #1B1F23;
     height: 100vh;
     width: 100vw;
     color: #F2F2F2;
 }
-
 .link-to-vercel {
     position: fixed;
     color: #F2F2F2;
@@ -316,7 +270,6 @@ option {
 ::placeholder {
     font-size: 0.8vw;
 }
-
 @keyframes degradeBg {
     0% {
         background-position-x: 0%;
@@ -326,7 +279,6 @@ option {
         background-position: 100%;
     }
 }
-
 @media screen and (max-width: 800px) {
     .container-rocket {
         display: none;

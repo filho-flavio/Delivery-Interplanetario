@@ -25,7 +25,7 @@ const ModalCriarEnderecos = ({ setAddingAddress }) => {
 
         if (name === "planet") {
             setPlanet(value);
-            setMessageError(""); 
+            setMessageError("");
 
             const updatedAddress = { ...commonFields, id: uuidv4(), planet: value };
             if (value === "Marte") {
@@ -96,11 +96,7 @@ const ModalCriarEnderecos = ({ setAddingAddress }) => {
                             </label>
                         </div>
                     </>
-
-                }
-
-
-                {
+                } {
                     planet == "Terra" &&
                     <div className="endereco-terra">
                         <label className="label-planet">
@@ -138,8 +134,6 @@ const ModalCriarEnderecos = ({ setAddingAddress }) => {
                 </div>
             </form>
         </div>
-
     )
 }
-
 export default ModalCriarEnderecos;
