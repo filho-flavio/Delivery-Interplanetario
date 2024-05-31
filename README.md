@@ -11,7 +11,7 @@ Sistema de delivery interplanetário, automação de entregas entre Marte e a Te
 
 Para instalar e executar este projeto localmente, siga os passos abaixo:
 
-1. Instale as dependências do projeto:
+Instale as dependências do projeto:
    ```bash
    npm install
    ```
@@ -32,16 +32,18 @@ A estrutura de diretórios do projeto é organizada da seguinte forma:
 
 ```
 ├── public
-│   └── index.html
+│   └── (imagens e gifs)
 ├── src
-│   ├── assets
-│   │   └── (imagens e outros arquivos estáticos)
 │   ├── components
 │   │   └── (componentes reutilizáveis)
 │   ├── pages
 │   │   └── (páginas da aplicação)
-│   ├── store
-│   │   └── (configuração do Redux)
+│   ├── routes
+│   │   └── (configuração das rotas)
+│   ├── services
+│   │   └── (api para lidar com salvamento de dados)
+│   ├── styles
+│   │   └── (estilos globais)
 │   ├── App.js
 │   ├── index.js
 │   └── (outros arquivos de configuração e utilitários)
@@ -50,5 +52,4 @@ A estrutura de diretórios do projeto é organizada da seguinte forma:
 ## Funcionalidades
 
 - **Navegação**: Utiliza o React Router DOM para navegação entre as páginas.
-
-
+- **Api para salvar no Local Storage**: Utiliza o React Router DOM para navegação entre as páginas.

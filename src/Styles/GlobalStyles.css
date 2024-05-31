@@ -232,10 +232,10 @@ option {
     font-size: 0.9vw;
     color: #D04B23;
 }
-.flex {
+.wrap-name-phone {
     display: flex;
 }
-.flex label {
+.wrap-name-phone label {
     flex: 1;
 }
 .endereco-terra {
@@ -266,7 +266,6 @@ option {
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
-
 ::placeholder {
     font-size: 0.8vw;
 }
