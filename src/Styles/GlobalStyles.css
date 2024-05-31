@@ -11,7 +11,7 @@
 }
 
 .container-form {
-    width: 40%;
+    width: 40rem;
     height: 80%;
     /* box-shadow: rgba(71, 71, 71, 0.24) 0px 3px 8px; */
     border-radius: 3vw;
@@ -49,7 +49,7 @@
 
 
 .container-rocket {
-    width: 20%;
+    width: 20rem;
     height: 70%;
     display: flex;
     justify-content: center;
@@ -64,7 +64,7 @@
 .content-enderecos {
     width: 90%;
     height: 90%;
-    
+
     display: flex;
     flex-direction: column;
     gap: 1vw;
@@ -92,7 +92,7 @@
 
 .lista-enderecos {
     width: 100%;
-    max-height: 65%;
+    min-height: 65%;
     overflow-y: auto;
     padding-right: 0.2vw;
     display: flex;
@@ -105,16 +105,31 @@
 }
 
 .icone-endereco {
-  list-style-type: none;
-  width: 100%;
-  min-height: 8vh;
-  border-radius: 0.5vw;
-  border: 1px solid #3B82F6;
-  color: #F2F2F2;
+    list-style-type: none;
+    width: 100%;
+    min-height: 8vh;
+    max-height: 8vh;
+    border-radius: 0.5vw;
+    border: 1px solid #3B82F6;
+    color: #F2F2F2;
 
-  display:  flex;
-  align-items: center;
-  justify-content: space-around;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.icone-endereco p {
+    font-size: 1vw;
+}
+
+.icone-endereco[data-planet="Marte"] {
+    border: 1px solid #D04B23;
+}
+
+.address-label {
+    background-color: #2e2e2e;
+    padding: 0.3vw;
+    border-radius: 0.5vw;
 }
 
 .icon-planet {
@@ -124,7 +139,30 @@
 .icon-edit-address {
     width: 2vw;
     cursor: pointer;
-    color: #F2F2F2;
+    fill: #F2F2F2;
+}
+
+.icon-edit-address:hover {
+    scale: 1.05;
+    transition: .4s ease;
+}
+
+.btn-delete-address {
+    background-color: transparent;
+    border: none;
+    outline: none;
+}
+
+.icon-delete-address {
+    width: 2vw;
+    cursor: pointer;
+    fill: #c04343;
+}
+
+.icon-delete-address:hover {
+    fill: #c15050;
+    scale: 1.05;
+    transition: .4s ease;
 }
 
 .lista-enderecos::-webkit-scrollbar {
@@ -147,9 +185,45 @@
 
 .container-modal {
     width: 95%;
-    height: 80%;
     background-color: #1B1F23;
     justify-self: flex-end;
+}
+
+.wrap-btns-form {
+    display: flex;
+    justify-content: flex-end;
+    gap: 1vw;
+    width: 94%;
+    margin: auto;
+}
+
+.wrap-btns-form button {
+    width: 6vw;
+    height: 2.2vw;
+    border-radius: 0.5vw;
+    font-size: 0.9vw;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    color: #F2F2F2;
+    font-weight: 600;
+    transition: .5s ease;
+}
+
+.btn-cancelar-new-address {
+    background-color: #D04B23;
+}
+
+.btn-cancelar-new-address:hover {
+    background-color: #E06A4A;
+}
+
+.btn-salvar-new-address {
+    background-color: #3B82F6;
+}
+
+.btn-salvar-new-address:hover {
+    background-color: #6195e8;
 }
 
 .label-planet {
@@ -187,8 +261,23 @@ option {
     padding: 0.2vw;
 }
 
+
+.form-message-error {
+    height: 1.2vw;
+    font-weight: 600;
+    width: 94%;
+    margin: auto;
+    margin-bottom: 1vw;
+    font-size: 0.9vw;
+    color: #D04B23;
+}
+
 .flex {
     display: flex;
+}
+
+.flex label {
+    flex: 1;
 }
 
 .endereco-terra {
@@ -198,4 +287,17 @@ option {
 
 .endereco-terra label {
     flex: 1;
+}
+
+.container-edit {
+    background-color: #1B1F23;
+    height: 100vh;
+    width: 100vw;
+    color: #F2F2F2;
+}
+
+@media screen and (max-width: 800px) {
+    .container-rocket {
+        display: none;
+    }
 }
