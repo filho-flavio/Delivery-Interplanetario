@@ -159,6 +159,8 @@
     width: 95%;
     background-color: #1B1F23;
     justify-self: flex-end;
+    position: relative;
+    z-index: 2;
 }
 .wrap-btns-form {
     display: flex;

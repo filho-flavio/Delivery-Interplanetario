@@ -89,7 +89,7 @@ const Edit = () => {
                   </select>
                 </label>
 
-                <div className="flex">
+                <div className="wrap-name-phone">
                   <label className="label-planet">
                     Nome completo:
                     <input className="in-new-addres" type="text" name="fullName" value={address.fullName} onChange={handleChange} />
