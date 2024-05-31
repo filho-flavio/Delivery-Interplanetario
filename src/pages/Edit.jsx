@@ -58,7 +58,7 @@ const Edit = () => {
     <div className="container-register">
 
       <div className="container-rocket">
-        <img src="/public/gifs-de-foguete-2.gif" alt="Foguete flutuando" />
+        <img src="/public/foguete.gif" alt="Foguete flutuando" />
       </div>
 
       <div className='container-form'>
