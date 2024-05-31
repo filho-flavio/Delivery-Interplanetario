@@ -56,11 +56,6 @@ const Edit = () => {
 
   return (
     <div className="container-register">
-
-      <div className="container-rocket">
-        <img src="/public/foguete.gif" alt="Foguete flutuando" />
-      </div>
-
       <div className='container-form'>
 
         <h1 className=''>Delivery Interplanetário</h1>
