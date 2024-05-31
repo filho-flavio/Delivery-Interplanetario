@@ -296,6 +296,32 @@ option {
     color: #F2F2F2;
 }
 
+.link-to-vercel {
+    position: fixed;
+    color: #F2F2F2;
+    top: 90%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-decoration: none;
+    font-weight: 500;
+    background: linear-gradient(45deg, #dbc3df, #6a6863, #d4c5b1, #4b4a4a, #b03ca3);
+    background-size: 400% 100%;
+    animation: degradeBg 5s linear infinite alternate;
+
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+@keyframes degradeBg {
+    0% {
+        background-position-x: 0%;
+    }
+
+    100% {
+        background-position: 100%;
+    }
+}
+
 @media screen and (max-width: 800px) {
     .container-rocket {
         display: none;
