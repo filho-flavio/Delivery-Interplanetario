@@ -234,7 +234,7 @@
 }
 
 select {
-    font-size: 0.8vw;
+    font-size: 0.9vw;
     border: none;
     outline: none;
     height: 5vh;
@@ -247,6 +247,7 @@ select {
 option {
     color: #1B1F23;
     border-radius: 0.5vw;
+    font-size: 0.9vw;
 }
 
 .in-new-addres {
@@ -310,6 +311,10 @@ option {
 
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+}
+
+::placeholder {
+    font-size: 0.8vw;
 }
 
 @keyframes degradeBg {

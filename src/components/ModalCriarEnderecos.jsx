@@ -80,17 +80,19 @@ const ModalCriarEnderecos = ({ setAddingAddress }) => {
                                 <option value="">Selecione</option>
                                 <option value="Casa">Casa</option>
                                 <option value="Trabalho">Trabalho</option>
+                                <option value="Escritório">Escritório</option>
+                                <option value="Despache">Local de despache</option>
                             </select>
                         </label>
 
                         <div className="flex">
                             <label className="label-planet">
                                 Nome completo:
-                                <input className="in-new-addres" type="text" name="fullName" value={address.fullName} onChange={handleChange} />
+                                <input placeholder="Nome completo..." className="in-new-addres" type="text" name="fullName" value={address.fullName} onChange={handleChange} />
                             </label>
                             <label className="label-planet">
                                 Telefone:
-                                <input className="in-new-addres" type="text" name="address_contact" value={address.address_contact} onChange={handleChange} />
+                                <input placeholder="Telefone do endereço..." className="in-new-addres" type="text" name="address_contact" value={address.address_contact} onChange={handleChange} />
                             </label>
                         </div>
                     </>
@@ -103,19 +105,19 @@ const ModalCriarEnderecos = ({ setAddingAddress }) => {
                     <div className="endereco-terra">
                         <label className="label-planet">
                             País:
-                            <input className="in-new-addres" type="text" name="address_country" value={address.address_country} onChange={handleChange} />
+                            <input placeholder="País do endereço..." className="in-new-addres" type="text" name="address_country" value={address.address_country} onChange={handleChange} />
                         </label>
                         <label className="label-planet">
                             Estado:
-                            <input className="in-new-addres" type="text" name="address_state" value={address.state} onChange={handleChange} />
+                            <input placeholder="Estado do endereço..." className="in-new-addres" type="text" name="address_state" value={address.state} onChange={handleChange} />
                         </label>
                         <label className="label-planet">
                             Cidade:
-                            <input className="in-new-addres" type="text" name="address_city" value={address.address_city} onChange={handleChange} />
+                            <input placeholder="Cidade do endereço..." className="in-new-addres" type="text" name="address_city" value={address.address_city} onChange={handleChange} />
                         </label>
                         <label className="label-planet">
                             Código postal:
-                            <input className="in-new-addres" type="text" name="address_zip_code" value={address.address_zip_code} onChange={handleChange} />
+                            <input placeholder="Código postal do endereço..." className="in-new-addres" type="text" name="address_zip_code" value={address.address_zip_code} onChange={handleChange} />
                         </label>
                     </div>
                 }
@@ -124,7 +126,7 @@ const ModalCriarEnderecos = ({ setAddingAddress }) => {
                     planet == "Marte" &&
                     <label className="label-planet">
                         Lote:
-                        <input className="in-new-addres" type="text" name="lot_number" value={address.lot_number} onChange={handleChange} />
+                        <input placeholder="Lote em Marte..." className="in-new-addres" type="text" name="lot_number" value={address.lot_number} onChange={handleChange} />
                     </label>
                 }
 
