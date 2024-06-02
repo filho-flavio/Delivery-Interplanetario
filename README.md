@@ -1,11 +1,15 @@
+*Projeto para teste de vaga Desenvolvedor Front End*
+<br/>*Hospedado:* https://delivery-interplanetario.vercel.app/
 
 # Delivery Interplanetário
 Sistema de delivery interplanetário, automação de entregas entre Marte e a Terra.
+
 
 ## Tecnologias Utilizadas
 
 - **React**: Uma biblioteca JavaScript para construir interfaces de usuário.
 - **React Router DOM**: Roteamento entre as páginas do delivery.
+- **UUID**: Lib que gera um identificador universalmente exclusivo usando números aleatórios.
 
 ## Instalação
 
@@ -52,4 +56,5 @@ A estrutura de diretórios do projeto é organizada da seguinte forma:
 ## Funcionalidades
 
 - **Navegação**: Utiliza o React Router DOM para navegação entre as páginas.
-- **Api para salvar no Local Storage**: Utiliza o React Router DOM para navegação entre as páginas.
+- **Api para salvar no Local Storage**: API para simular backend salvando no Local Storage.
+- **CRUD**: Criar, Ler, Atualizar e Deletar endereços.
